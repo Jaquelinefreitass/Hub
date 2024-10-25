@@ -1,0 +1,83 @@
+:root {
+    --cor1: #302b63; /* Cor escura do fundo */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor1); /* Cor de fundo */
+    color: white;
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#informacoes {
+    min-height: 50px;
+    margin: 10px auto;
+}
+
+#iniciar {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: rgb(146, 157, 157);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#iniciar:hover {
+    color: var(--cor1);
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
+}
+
+/* Centraliza e ajusta o tamanho do tabuleiro */
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Mantém o tabuleiro 3x3 */
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.posicao {
+    width: 150px;
+    height: 150px;
+    font-size: 90px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+    background-color: var(--cor1);
+    border: solid white 10px;
+}
+
+/* Remove as bordas adicionais */
+.posicao-cima {
+    border-top: none;
+}
+
+.posicao-esquerda {
+    border-left: none;
+}
+
+.posicao-direita {
+    border-right: none;
+}
+
+.posicao-baixo {
+    border-bottom: none;
+}
+
+#tamanho {
+    width: 60px;
+}
