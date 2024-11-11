@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Jogos</title>
+  
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  background-color: #b76a1e;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.game-card {
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  padding-bottom: 15px;
+  width: 220px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.game-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.game-card h2 {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.game-card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: #b76a1e;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  font-size: 0.85rem;
+  width: 100px;
+  margin-top: auto;
+  align-self: center;
+  text-align: center;
+}
+
+.game-card a:hover {
+  background-color: #9c5a1a;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Meus Jogos</h1>
+  </header>
+
+  <!-- Container de jogos -->
+  <div class="container">
+    <div class="game-list">
+      
+      <!-- Card do Jogo da Velha -->
+      <div class="game-card">
+        <img src="../jogo_da_velha/jogo_velha.webp" alt="Jogo da Velha">
+        <h2>Jogo da Velha</h2>
+        <a href="../jogo_da_velha/jogo_da_velha.html">Jogar</a>
+      </div>
+      
+      <!-- Card para o Flappy Bird -->
+      <div class="game-card">
+        <img src="../flappy_bird/flappy.webp" alt="Flappy Bird">
+        <h2>Flappy Bird</h2>
+        <a href="../flappy_bird/jogo.html">Jogar</a>
+      </div>
+      
+      <!-- Card para Tetris -->
+      <div class="game-card">
+        <img src="../tetris/Tetris game. .webp" alt="Tetris">
+        <h2>Tetris</h2>
+        <a href="../tetris/tetris.html">Jogar</a>
+      </div>
+      
+      <!-- Card para Snake -->
+      <div class="game-card">
+        <img src="../cobrinha/cobrinha.webp" alt="Snake">
+        <h2>Snake</h2>
+        <a href="../cobrinha/index.html">Jogar</a>
+      </div>
+      
+      <!-- Card para Jogo da Memória -->
+      <div class="game-card">
+        <img src="../jogo_memória/memoria.webp" alt="Jogo da Memória">
+        <h2>Jogo da Memória</h2>
+        <a href="../jogo_memória/index.html">Jogar</a>
+      </div>
+      
+      <!-- Card para Quiz -->
+      <div class="game-card">
+        <img src="../quiz/quiz.webp" alt="Quiz">
+        <h2>Quiz</h2>
+        <a href="../quiz/index.html">Jogar</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
